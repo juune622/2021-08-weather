@@ -10,15 +10,16 @@ html,body{font-family: 'Sunflower', sans-serif;line-height: 1;}
 
 /* 전체 */
 .all-wrapper{font-family: inherit; width: 100%;height: 100vh;position: relative;background-repeat: no-repeat;background-position: center;background-size: cover;padding: 3%;color: #f9f9f9;}
-
+/* 타이틀 */
 .title-wrapper{display: flex;justify-content: center;margin-bottom: 2em;}
 .title-wrapper .version{text-align: right;transform: translate(15px,2px);}
 .title-wrapper .img-wrap{transform: translate(10px,-10px);}
-
+/* 날씨 */
 .content-wrapper{display: flex;justify-content: space-between;}
 .content-wrapper>.map-wrap{flex: 400px 0 0;height: 600px;}
 .content-wrapper>.city-wrap{display: none;}
 .content-wrapper>.weather-wrap{flex: 100% 0 1;margin-left: 5%;}
+
 .content-wrapper .popper{display: flex;position: absolute;background-color: rgb(73, 189, 173);border-radius: 4px;text-align: center;align-items: center;padding-right: 4px;font-weight: lighter;font-size: 0.75em;top: -48px;}
 .content-wrapper .popper.lt{left: 0px;}
 .content-wrapper .popper.ct{left: -30px;}
@@ -40,6 +41,18 @@ html,body{font-family: 'Sunflower', sans-serif;line-height: 1;}
 .content-wrapper .city>.content{display: flex;align-items: center;line-height: 1.2;padding: 4px 12px 0 4px; background-color: rgba(0,0,0,0.4);}
 
 
+.daily-container{background-color: rgba(0,0,0,0.6);border-radius: 8px;padding: 1.5em;}
+.daily-container .city{text-align: center;margin-bottom: 0.75em;}
+.daily-container .info-wrapper{display: flex;flex-wrap: wrap;align-items: center;justify-content: center;}
+.daily-container .info-wrapper .temp-wrap{margin: 0 2em 0 1em; text-align: center;}
+.daily-container .info-wrapper .temp-wrap h3{font-size: 3em;line-height: 1;}
+.daily-container .info-wrapper .info-wrap>div{padding: 0.25em 0;}
+.daily-container .info-wrapper .info-wrap>.date{margin-top: 0.75em;font-size: 0.875em;}
+.daily-container .info-wrapper .info-wrap .main{font-size: 1.75em;}
+.daily-container .info-wrapper .info-wrap .title{color: #ddd;margin-right: 0.25em;}
+.daily-container .info-wrapper .info-wrap .info{font-size: 1.25em;}
+.daily-container .info-wrapper .info-wrap .divide{margin: 0 0.5em;}
+
 
 
 @media screen and (max-width : 1199px){
@@ -51,6 +64,7 @@ html,body{font-family: 'Sunflower', sans-serif;line-height: 1;}
   .content-wrapper>.map-wrap{display: none;}
   .content-wrapper>.city-wrap{flex: 100% 0 0;display: block;}
   .content-wrapper>.weather-wrap{margin-left: 0;flex: 100% 0 0;}
+  .weather-wrap{margin-top: 2em;padding: 0 3%;}
 }
 @media screen and (max-width : 767px){
 
@@ -59,6 +73,7 @@ html,body{font-family: 'Sunflower', sans-serif;line-height: 1;}
   .all-wrapper{padding: 8% 3%;}
 .title-wrapper .title{font-size: 2em;}
 .title-wrapper .img-wrap{width: 80px;transform: translate(8px,-3px);}
+.daily-container{padding: 1.5em 1em;}
 }
 
 
